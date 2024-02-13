@@ -182,3 +182,55 @@
       padding: 7.5em 1.5em 4em 1.5em;
     }
   }
+
+  /* For tablets and below */
+@media (max-width: 768px) {
+    .login_box {
+        padding: 5em 2em 3em; /* Slightly reduce padding */
+    }
+
+    .login-header span {
+        font-size: 24px; /* Reduce font size */
+    }
+
+    .input_box, .remember-forgot, .input-submit, .register {
+        margin: 15px 0; /* Adjust spacing */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .wrapper {
+        padding: 10px; /* Add padding to the wrapper for some space */
+    }
+
+    .login_box {
+        padding: 4em 1em 2em; /* Further reduce padding for smaller screens */
+    }
+
+    .login-header span {
+        font-size: 20px; /* Further reduce font size */
+    }
+
+    .input-field, .input-submit {
+        height: 45px; /* Reduce input and button height */
+    }
+
+    .label, .icon {
+        font-size: 14px; /* Adjust label and icon size */
+    }
+
+    .input_box {
+        margin: 10px 0; /* Adjust spacing */
+    }
+}
+body {
+    background-position: center;
+    background-size: cover; /* Ensures the background covers the viewport */
+}
+/* Adjust base font size on smaller screens */
+@media (max-width: 480px) {
+    body, html {
+        font-size: 14px; /* Reduce the base font size */
+    }
+}
